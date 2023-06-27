@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Recenze filmů</h1>
+
+<div id="recenzes">
+  <% @recenzes.each do |recenze| %>
+    <%= render recenze %>
+    <p>
+      <%= link_to "Zobrazit recenzi", recenze %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nová recenze", new_recenze_path %>

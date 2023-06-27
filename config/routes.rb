@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root "pages#main"
+  resources :recenzes
+  root "recenzes#index"
  
 end

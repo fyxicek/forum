@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @recenze %>
+
+<div>
+  <%= link_to "Editovat recenzi", edit_recenze_path(@recenze) %> |
+  <%= link_to "Zpět na recenze", recenzes_path %>
+
+  <%= button_to "Smazat recenzi", @recenze, method: :delete %>
+</div>
