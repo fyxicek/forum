@@ -1,14 +1,18 @@
-<p style="color: green"><%= notice %></p>
+<div class="all-recenzes">
+<%= render "partials/notice" %>
 
-<h1>Recenze filmů</h1>
 
-<div id="recenzes">
+<section id="recenzes" class="column">
   <% @recenzes.each do |recenze| %>
+
     <%= render recenze %>
-    <p>
+    <p class="display-recenze">
       <%= link_to "Zobrazit recenzi", recenze %>
     </p>
+   
   <% end %>
-</div>
+
 
 <%= link_to "Nová recenze", new_recenze_path %>
+</div>
+</section>

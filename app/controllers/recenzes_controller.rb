@@ -65,6 +65,6 @@ class RecenzesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def recenze_params
-      params.require(:recenze).permit(:name, :description, :hodnoceni)
+      params.require(:recenze).permit(:name, :description, :hodnoceni, :image)
     end
 end
