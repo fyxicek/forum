@@ -1,3 +1,4 @@
+<section class="all-recenzes">
 <h1>Editace recenze</h1>
 
 <%= render "form", recenze: @recenze %>
@@ -5,6 +6,7 @@
 <br>
 
 <div>
-  <%= link_to "Zobrazit recenzi", @recenze %> |
-  <%= link_to "Zpět na recenze", recenzes_path %>
+  <%= link_to "Zobrazit recenzi", @recenze, class: "button is-link" %> 
+  <%= link_to "Zpět na recenze", recenzes_path, class: "button is-link" %>
 </div>
+</section>

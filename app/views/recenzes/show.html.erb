@@ -1,14 +1,18 @@
-<section class="box-columns">
+<section class="all-recenzes">
 
 <h1>aasdsad</h1>
 
 <%= render "partials/notice" %>
 <%= render @recenze %>
 
-<div>
-  <%= link_to "Editovat recenzi", edit_recenze_path(@recenze) %> |
-  <%= link_to "Zpět na recenze", recenzes_path %>
-
-  <%= button_to "Smazat recenzi", @recenze, method: :delete %>
+<footer class="edit-links">
+<div class="buttons has-addons">
+  <%= link_to "Editovat recenzi", edit_recenze_path(@recenze), class: "button is-link" %> 
+  <%= link_to "Zpět na recenze", recenzes_path, class: "button is-link" %>
 </div>
+
+  <%= button_to "Smazat recenzi", @recenze, method: :delete, class: "button is-danger" %>
+
+</footer>
+
 </section>

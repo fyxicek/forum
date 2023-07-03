@@ -7,12 +7,12 @@
 
     <%= render recenze %>
     <p class="display-recenze">
-      <%= link_to "Zobrazit recenzi", recenze %>
+      <%= link_to "Zobrazit recenzi", recenze, class: "button is-link" %>
     </p>
    
   <% end %>
 
 
-<%= link_to "Nová recenze", new_recenze_path %>
+<%= link_to "Nová recenze", new_recenze_path, class: "button is-primary" %>
 </div>
 </section>
