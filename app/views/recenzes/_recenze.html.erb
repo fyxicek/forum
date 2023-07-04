@@ -2,20 +2,22 @@
 <div class="one-recenze">
 <div id="<%= dom_id recenze %>">
   <p>
-    <strong>Název filmu:</strong>
+    <b>Název filmu:</b>
     <%= recenze.name %>
   </p>
 
   <p>
-    <strong>Popis filmu:</strong>
-    <%= recenze.description %>
+    <b>Popis filmu:</b>
+    <%= recenze.description%>
   </p>
 
   <p>
-    <strong>Hodnocení:</strong>
+    <b>Hodnocení:</b>
     <%= recenze.hodnoceni %>
   </p>
-
+  <p>
+      <%= link_to "Zobrazit recenzi", recenze, class: "button is-link" %>
+    </p>
   
 </div>
 </div>

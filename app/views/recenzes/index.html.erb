@@ -1,18 +1,17 @@
+
+<div class="row">
 <div class="all-recenzes">
+<header>
 <%= render "partials/notice" %>
+</header>
+<%= link_to "Nová recenze", new_recenze_path, class: "button is-primary" %>
 
-
-<section id="recenzes" class="column">
-  <% @recenzes.each do |recenze| %>
-
+<section id="recenzes" class="row">
+  <% @recenzes.each do |recenze|  %>
     <%= render recenze %>
-    <p class="display-recenze">
-      <%= link_to "Zobrazit recenzi", recenze, class: "button is-link" %>
-    </p>
+    
    
   <% end %>
-
-
-<%= link_to "Nová recenze", new_recenze_path, class: "button is-primary" %>
 </div>
 </section>
+</div>

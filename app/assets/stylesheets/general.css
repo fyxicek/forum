@@ -1,16 +1,16 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+main, body, html{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(29, 47, 111);
+}
 body{
-
-    
-    margin: auto;
+    margin:0 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(29, 47, 111);
     color:white;
-    text-decoration:none;
     border: 2px white;
-    height: 100vh;
     border-radius: 10px;
 }
 .button{
@@ -29,27 +29,38 @@ body{
     border: 2px solid white;
     display: flex;
     width: 300px;
-    margin: 40px 10px;
-    padding: 5px;
+    margin:30px auto;
     flex-direction: column;
     transition: all 0.5s linear;
     border: 2.5px solid;
     border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
 
 }
-.display-recenze{
-    color: black;
-    text-decoration: none;
-}
+
 .all-recenzes{
     border-radius: 10px;
     border: 5px solid white;
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    max-width: fit-content;
-    width: 90%;
+    padding: 10px 10px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    margin: 30px auto;
+    width: fit-content;
 }
+
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one-recenze:hover{
+    transform: scale(1.1);
+}
+
