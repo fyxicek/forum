@@ -36,6 +36,7 @@ body{
     border-radius: 10px;
     color: white;
     padding: 10px 10px;
+    max-width: fit-content;
 
 }
 
@@ -44,7 +45,7 @@ body{
     border: 5px solid white;
     display: flex;
     flex-direction: row;
-    padding: 10px 10px;
+    padding: 0px 0px;
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px auto;
@@ -63,4 +64,8 @@ body{
 .one-recenze:hover{
     transform: scale(1.1);
 }
-
+.edit-links{
+margin-top: 120px;
+padding-left: 20px;
+padding-right: 10px;
+}
